@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- viewport pour être responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <!-- jQuery Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- bootstrap.js Fichier js qui a besoin de jQuery pour fonctionner -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>La touche musicale | A vous de jouer</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./index.html">La touche musicale</a>
+            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <form>
+                            <label for="button_import" class="customized_button">
+                                <span id="label_span">
+                                    <i class="fas fa-upload"></i>
+                                </span>
+                            </label>
+                            <input id="button_import" type="file" multiple="false" value="submit"/>
+                        </form>
+                    </li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Create account</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="mapvideo" class="container-fluid">
+        <div class="map">
+        <video id="learning_map" autoplay poster="" >
+            <source id="start" src="media/video/MadWorld.mp4" width="1330" type="video/webm">
+        </video>
+        </div>
+    </section>
+
+    <section id="ClavierPiano" class="ClavierPiano"> <!-- Clavier piano -->
+        <ul id="4" class="octave">
+                <li class="white c"></li>
+                <li class="black cs"></li>
+                <li class="white d"></li>
+                <li class="black ds"></li>
+                <li class="white e"></li>
+                <li class="white f"></li>
+                <li class="black fs"></li>
+                <li class="white g"></li>
+                <li class="black gs"></li>
+                <li class="white a"></li>
+                <li class="black as"></li>
+                <li class="white b"></li>
+        </ul>
+        <ul id="5" class="octave">
+                <li class="white c"></li>
+                <li class="black cs"></li>
+                <li class="white d"></li>
+                <li class="black ds"></li>
+                <li class="white e"></li>
+                <li class="white f"></li>
+                <li class="black fs"></li>
+                <li class="white g"></li>
+                <li class="black gs"></li>
+                <li class="white a"></li>
+                <li class="black as"></li>
+                <li class="white b"></li>
+        </ul>
+        <ul id="6" class="octave">
+                <li class="white c"></li>
+                <li class="black cs"></li>
+                <li class="white d"></li>
+                <li class="black ds"></li>
+                <li class="white e"></li>
+                <li class="white f"></li>
+                <li class="black fs"></li>
+                <li class="white g"></li>
+                <li class="black gs"></li>
+                <li class="white a"></li>
+                <li class="black as"></li>
+                <li class="white b"></li>
+        </ul>
+    </section>
+
+    <footer class="text-center">
+        <a href="#about">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <h5>© 2016 La touche musicale</h5>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>

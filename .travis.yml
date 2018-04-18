@@ -1,0 +1,6 @@
+env:
+  global:
+    - "FTP_USER=latoucheyr"
+    - "FTP_PASSWORD=tKfMzTvE4SUm"
+after_success:
+    "curl -T index.html -u $FTP_USER:$FTP_PASSWORD ftp://ftp.cluster023.hosting.ovh.net/www/mvp"
